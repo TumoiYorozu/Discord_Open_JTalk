@@ -3,6 +3,7 @@
 
 ```
 git clone --recursive https://github.com/TumoiYorozu/Discord_Open_JTalk
+cd Discord_Open_JTalk
 
 wget "https://ja.osdn.net/frs/g_redir.php?m=jaist&f=mmdagent%2FMMDAgent_Example%2FMMDAgent_Example-1.8%2FMMDAgent_Example-1.8.zip" -O MMDAgent_Example-1.8.zip
 unzip MMDAgent_Example-1.8.zip
