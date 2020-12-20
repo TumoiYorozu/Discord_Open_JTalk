@@ -22,6 +22,7 @@ exec $SHELL -l
 
 npm install
 npx tsc
+mkdir tmp_wav
 ```
 
 Edit `config.json`
