@@ -183,11 +183,10 @@ function check_talk(message : Discord.Message) {
     if (rooms[gid].users[uid] == null) return;
 
     let str = message.content;
-    str=str.replace(/(h?ttps?:\/\/)?([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=~]*)?/g, ' URL省略 ');
+    str=str.replace(/(h?ttps?:\/\/)([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=~]*)?/g, ' URL省略 ');
     str=str.replace(/<(@!|#)[0-9]+>/g, ''); // ユーザー・チャンネル名削除
-    // str=str.replace(/<[^>]+>/g, ''); // ユーザー・チャンネル名削除
-    
     str=str.replace(/(<:[^:]+:[0-9]+>|:[\w_]+:)/g, ' 絵文字 ');
+    str=str.replace(/\n/g, " ");
     str=emoji.replace(str, () => " 絵文字 "); // 絵文字除去
     
     console.log("str: ", str);
