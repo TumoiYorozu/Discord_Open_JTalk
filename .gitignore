@@ -1,0 +1,7 @@
+build/
+node_modules/
+MMDAgent_Example-1.8/
+dic/
+tmp_wav/*
+.vscode/
+config.json
