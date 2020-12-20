@@ -3,7 +3,7 @@
 
 ```
 sudo apt update
-sudo apt install -y nodejs npm open-jtalk
+sudo apt install -y nodejs npm ffmpeg open-jtalk
 sudo npm install n -g
 sudo n 12.16.2 
 sudo apt purge -y nodejs npm
