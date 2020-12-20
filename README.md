@@ -2,6 +2,15 @@
 ## Install
 
 ```
+sudo apt update
+sudo apt install -y nodejs npm open-jtalk
+sudo npm install n -g
+sudo n 12.16.2 
+sudo apt purge -y nodejs npm
+exec $SHELL -l
+
+mkdir tmp_wav dic
+
 git clone --recursive https://github.com/TumoiYorozu/Discord_Open_JTalk
 cd Discord_Open_JTalk
 
@@ -13,17 +22,8 @@ wget "https://ja.osdn.net/frs/g_redir.php?m=jaist&f=open-jtalk%2FDictionary%2Fop
 tar xvzf open_jtalk_dic_utf_8-1.11.tar.gz -C dic
 rm open_jtalk_dic_utf_8-1.11.tar.gz
 
-
-sudo apt update
-sudo apt install -y nodejs npm open-jtalk
-sudo npm install n -g
-sudo n 12.16.2 
-sudo apt purge -y nodejs npm
-exec $SHELL -l
-
 npm install
 npx tsc
-mkdir tmp_wav
 ```
 
 Edit `config.json`
