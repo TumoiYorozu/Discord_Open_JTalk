@@ -187,6 +187,7 @@ function check_talk(message : Discord.Message) {
     str=str.replace(/<(@!|#)[0-9]+>/g, ''); // ユーザー・チャンネル名削除
     str=str.replace(/(<:[^:]+:[0-9]+>|:[\w_]+:)/g, ' 絵文字 ');
     str=str.replace(/\n/g, " ");
+    str=str.replace("～", "ー");
     str=emoji.replace(str, () => " 絵文字 "); // 絵文字除去
     
     console.log("str: ", str);
