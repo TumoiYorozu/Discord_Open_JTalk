@@ -251,7 +251,7 @@ function get_help(){
     res += " `" + prefix + cmd_break    + "`: Break speaking.\n";
     res += " `" + prefix + cmd_list     + "`: List active user.\n";
     res += " `" + prefix + cmd_change   + "`: Change settings.\n";
-    res += " `" + prefix + cmd_quit     + "`: Quit talk.\n";
+    res += " `" + prefix + cmd_quit     + "`: Quit all user talk.\n";
     res += "Settings\n"
     res += " `voice`:";
     for(const v in VoiceConfig.voice_list){
